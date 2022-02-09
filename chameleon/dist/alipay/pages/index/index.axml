@@ -1,0 +1,3 @@
+<view class=" cml-base cml-view cml-1c0cfd8c"><cml-buildin-page title="chameleon" class=" cml-base cml-page cml-1c0cfd8c">
+    <text onTap="_cmlEventProxy" data-eventtap="{{['clicked']}}" class=" cml-base cml-text cml-1c0cfd8c"> {{title}}</text>
+  </cml-buildin-page></view>

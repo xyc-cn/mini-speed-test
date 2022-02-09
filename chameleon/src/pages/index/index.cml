@@ -1,0 +1,77 @@
+<template>
+  <page title="chameleon">
+      <text @click="clicked"> {{ title }}</text>
+  </page>
+</template>
+
+<script>
+
+class Index  {
+  data = {
+    title: "chameleon",
+    chameleonSrc: require('../../assets/images/chameleon.png')
+  }
+  mounted () {
+    console.log(Date.now())
+  }
+  methods =  {
+    clicked(){
+      const d = Date.now()
+      global.tttt = d
+      console.log(d)
+      this.title = 'test'
+    }
+  }
+}
+
+export default new Index();
+
+</script>
+<style>
+
+.scroller-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {
+      "demo-com": "/components/demo-com/demo-com"
+    }
+  },
+  "wx": {
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+  },
+  "alipay": {
+    "defaultTitle": "index",
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#ffffff"
+  },
+  "baidu": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "index",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "qq": {
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+  },
+  "tt": {
+    "navigationBarTitleText": "index",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+  }
+}
+</script>

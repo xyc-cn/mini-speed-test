@@ -1,0 +1,1 @@
+<template name="09c6c234"><view class="_div data-v-4cf53cc1"><view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_p data-v-4cf53cc1"> {{ motto }} </view></view></template>
